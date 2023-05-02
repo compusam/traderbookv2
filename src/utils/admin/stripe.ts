@@ -1,6 +1,6 @@
 import Stripe from "stripe";
-
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "", {
+const stripe_secret_key = 'sk_test_YHlLMEgJGHK069lmfus0wWJW';
+export const stripe = new Stripe(stripe_secret_key, {
   // https://github.com/stripe/stripe-node#configuration
   apiVersion: "2022-08-01",
   // Register this as an official Stripe plugin.

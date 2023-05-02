@@ -9,25 +9,38 @@ type Props = {
 };
 
 const AccountSubscription = ({ accountId }: Props) => {
+  console.log("AccountId ",accountId);
   const { t } = useTranslation("dashboard");
 
   const { data } = useAccountBillingStatus(accountId);
-
+  console.log("data from useAccountBillingStatus ",data);
   const getSubscriptionUrl = useMutation(
     async () => {
-      const res = await fetch("/api/billing/portal-link", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ accountId }),
-      });
-      const { url } = await res.json();
-      return url;
+
+      try {
+        console.log("accountId in  useMutation ",accountId);
+        console.log("accountId in  useMutation, body ",JSON.stringify({ accountId }));
+        const res = await fetch("/api/billing/portal-link", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ accountId }),
+        });
+        const { url } = await res.json();
+        return url;
+
+      } 
+      
+      catch (error) {
+        console.log("Error from getSubscriptionUrl ",error);
+      }
+     
     },
     {
       onSuccess(url) {
-        window.location.href = url;
+         window.location.href = url;
+        //console.log("URL ", url);
       },
     }
   );
@@ -48,14 +61,15 @@ const AccountSubscription = ({ accountId }: Props) => {
           description={t("accountSubscription.description")}
         >
           <SettingsCard.Body>
-            <h2 className="h4">
+            <h2 className="h3">
               {data?.plan_name} - {data?.status}
             </h2>
-            <p>
-              {t("accountSubscription.billingEmail", {
-                email: data?.billing_email,
-              })}
-            </p>
+            {/* <p> */}
+            <h2 className="h4">
+              {t("accountSubscription.billingEmail")}
+              </h2>
+              <h2 className="h3">{data?.billing_email}</h2>
+            {/* </p> */}
           </SettingsCard.Body>
           <SettingsCard.Footer>
             <Button

@@ -2,7 +2,7 @@
 
 # project dependencies
 .idea
-
+.directory
 # dependencies
 /node_modules
 /.pnp

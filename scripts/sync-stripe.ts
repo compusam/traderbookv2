@@ -4,8 +4,9 @@ import {
   upsertProductRecord,
 } from "@/utils/admin/stripe-billing-helpers";
 
+const stripe_secret_key = 'sk_test_YHlLMEgJGHK069lmfus0wWJW';
 // check if stripe key is set, exit if not
-if (!process.env.STRIPE_SECRET_KEY) {
+if (!stripe_secret_key) {
   console.log("No Stripe key found, skipping sync");
   process.exit(0);
 }

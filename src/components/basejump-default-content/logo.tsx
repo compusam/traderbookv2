@@ -28,10 +28,10 @@ const Logo = ({ size = "lg", className }: Props) => {
         })}
       >
         <Image
-          src={"/images/basejump-logo.png"}
+          src={"/images/logo.png"}
           height={height}
           width={width}
-          alt="Basejump Logo"
+          alt="Traderbook Logo"
         />
       </div>
       <h1
@@ -40,7 +40,7 @@ const Logo = ({ size = "lg", className }: Props) => {
           "text-2xl": size === "sm",
         })}
       >
-        Basejump
+        Traderbook
       </h1>
     </div>
   );

@@ -7,6 +7,7 @@ import DashboardMeta from "@/components/dashboard/dashboard-meta";
 const PersonalAccountBilling = () => {
   const { t } = useTranslation("dashboard");
   const { data } = usePersonalAccount();
+  console.log("Data from usePersonalAccount",data);
   return (
     <DashboardContent>
       <DashboardMeta title={t("dashboardMeta.billing")} />
