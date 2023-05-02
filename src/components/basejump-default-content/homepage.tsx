@@ -112,7 +112,7 @@ const BasejumpHomepage = () => (
               <p>
                 Supabase bills itself as &quot;an open source Firebase
                 alternative,&quot; but it&apos;s so much more. It also serves as
-                the primary force behind Basejump
+                the primary force behind Traderbook
               </p>
             </a>
           </li>
@@ -140,7 +140,7 @@ const BasejumpHomepage = () => (
               <span className="font-bold">Tailwind</span>
               <p>
                 Tailwind is a utility-first CSS library that forms the base of
-                all the styling for Basejump
+                all the styling for Traderbook
               </p>
             </a>
           </li>
@@ -204,11 +204,11 @@ const BasejumpHomepage = () => (
           <li>
             <a
               href="https://www.flaticon.com/free-icons/parachuting"
-              title="Basejump dude credit"
+              title="Traderbook dude credit"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Our awesome basejumper dude was created by monkik
+              Some arts like a logo dude was created by monkik
             </a>
           </li>
           <li>
