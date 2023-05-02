@@ -5,16 +5,17 @@ import ContentMeta from "@/components/content-pages/content-meta";
 const BasejumpHomepage = () => (
   <div className="max-w-screen-lg mx-auto bg-base-100">
     <ContentMeta
-      title="Basejump - SaaS starter kit for Supabase and NextJS"
-      description="An opinionated short cut for launching Supabase apps using NextJS"
-      socialImage={`/api/og?title=Basejump`}
+      title="Traderbook - SaaS Indicators Tradingview"
+      description="Traderbook: Toma decisiones informadas y rentables en el mercado de criptomonedas con nuestra plataforma de indicadores en Tradingview"
+      socialImage={`/api/og?title=Traderbook`}
     />
     <div className="pt-8 pb-24 md:pt-36 md:pb-48">
       <Logo size="lg" className="mx-auto" />
       <h2 className="h2 text-center my-2">
-        An opinionated shortcut for launching{" "}
-        <span className="text-accent">Supabase</span> apps with{" "}
-        <span className="text-accent">NextJS</span>
+      Traderbook: La plataforma de indicadores en Tradingview para tomar
+decisiones informadas en los mercados de criptomonedas
+        <span className="text-accent">criptomonedas</span> y {" "}
+        <span className="text-accent">forex</span>
       </h2>
     </div>
     <div className="grid grid-cols-1 gap-y-8 lg:gap-y-16">
@@ -84,10 +85,9 @@ const BasejumpHomepage = () => (
             </p>
           </div>
           <div className="flex flex-col bg-base-200 rounded-lg p-6 md:col-span-3">
-            <h3 className="h3 mb-2">Open Source</h3>
+            <h3 className="h3 mb-2">Some other features</h3>
             <p>
-              Basejump is open source, contributions are both awesome and
-              encouraged!
+              Allways new features!
             </p>
           </div>
         </div>
