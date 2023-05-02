@@ -52,7 +52,7 @@ const BasejumpHomepage = () => (
           <div className="flex flex-col bg-base-200 rounded-lg p-6">
             <h3 className="h3 mb-2">Full Component Library</h3>
             <p>
-              Basejump leverages DaisyUI and TailwindCSS for an easy development
+              Traderbook leverages DaisyUI and TailwindCSS for an easy development
               experience
             </p>
           </div>
@@ -73,7 +73,7 @@ const BasejumpHomepage = () => (
           <div className="flex flex-col bg-base-200 rounded-lg p-6">
             <h3 className="h3 mb-2">Fully Customizable</h3>
             <p>
-              Basejump is a batteries-included starting point for your
+              Traderbook is a batteries-included starting point for your
               application. Customize it to your hearts content
             </p>
           </div>
@@ -96,7 +96,7 @@ const BasejumpHomepage = () => (
           Sensible Defaults & Special Thanks
         </h1>
         <p>
-          Basejump is built using some really awesome open source libraries and
+          Traderbook is built using some really awesome open source libraries and
           graphics. Here are some of them
         </p>
         <h4 className="h4 mt-4">Libraries and tools</h4>
