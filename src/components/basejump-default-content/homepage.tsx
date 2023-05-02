@@ -12,10 +12,9 @@ const BasejumpHomepage = () => (
     <div className="pt-8 pb-24 md:pt-36 md:pb-48">
       <Logo size="lg" className="mx-auto" />
       <h2 className="h2 text-center my-2">
-      Traderbook: La plataforma de indicadores en Tradingview para tomar
-decisiones informadas en los mercados de criptomonedas
-        <span className="text-accent">criptomonedas</span> y {" "}
-        <span className="text-accent">forex</span>
+      The indicators platform in Tradingview for making informed decisions in
+        <span className="text-accent">Cryptocurrency</span> and {" "}
+        <span className="text-accent">Forex</span> markets.
       </h2>
     </div>
     <div className="grid grid-cols-1 gap-y-8 lg:gap-y-16">
